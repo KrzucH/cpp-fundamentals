@@ -3,8 +3,13 @@
 // TODO: Implement foo() and bar()
 // foo() should modify value under passed pointer to 10
 // bar() should modify value under passed pointer to 20
-// Can we have a pointer to const or a const pointer?
-
+// Can we have a pointer to const or a const pointerd
+int foo(int * const ptr) {
+    return *ptr *= 2;
+}
+int bar(int * const ptr) {
+    return *ptr *= 2;
+}
 int main() {
     int number = 5;
     int* pointer = &number;
